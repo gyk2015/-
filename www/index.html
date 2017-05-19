@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>聊天室</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<div class="content">
+		<header>
+			欢迎来到郭逸坤特别开发的聊天室
+			<p id="status"></p>
+		</header>
+		<div class="content-main">
+			<div class="historyMsg" id="historyMsg"></div>
+			<div class="friendList" id="friendList">
+				<ul>
+				</ul>
+			</div>
+			<div class="inputMsg">
+				<textarea id="messageInput"></textarea>
+				<input type="button" name="" value="发送" id="sendBtn">
+			</div>
+		</div>
+	</div>
+	<div class="login">
+		<div class="mask"></div>
+		<div class="loginContent">
+			<p id="info">connecting to server...</p>
+			<input type="text" name="name" id="nicknameInput">
+			<input type="button" name="" value="进入" id="loginBtn">
+		</div>
+		
+	</div>
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript">
+		// var socket=io.connect(),//与服务器进行连接
+		// 	button=document.getElementById('sendBtn');
+		// button.onclick=function(){
+		// 	socket.emit('foo', 'hello');//发送一个名为foo的事件，并且传递一个字符串数据‘hello’
+		// }
+	</script>
+</body>
+</html>
